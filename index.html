@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Praxis — AI-экосистема для психологов: база знаний, AI-поиск и CRM</title>
+<meta name="description" content="Praxis объединяет проверенную базу знаний, AI-поиск решений и CRM для психолога в одной подписке. Демо-доступ на 21 день — бесплатно.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Praxis — AI-экосистема для психологов">
+<meta property="og:description" content="Проверенная база знаний, AI-поиск и CRM в одной подписке. Попробуйте бесплатно 21 день.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231f5db3'/%3E%3Ctext x='32' y='44' font-size='38' font-weight='800' font-style='italic' text-anchor='middle' fill='white' font-family='Arial'%3EP%3C/text%3E%3C/svg%3E">
+<style>html{scroll-behavior:smooth}body{margin:0;background:#fff}</style>
+</head>
+<body>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap&subset=cyrillic" rel="stylesheet">
+
+<style>
+.px{--ink:#0f1f3d;--mut:#51607a;--blue:#1f5db3;--sky:#5cc8ee;--mint:#8fd97f;--bg:#f4f8fd;--card:#ffffff;--line:#dbe6f4;
+font-family:'Inter',Arial,sans-serif;color:var(--ink);line-height:1.55;font-size:17px;background:#fff;overflow:hidden}
+.px *{box-sizing:border-box}
+.px h1,.px h2,.px h3{font-family:'Montserrat','Inter',Arial,sans-serif;margin:0;line-height:1.15;letter-spacing:-.01em}
+.px p{margin:0}
+.px a{color:inherit;text-decoration:none}
+.px-w{max-width:1160px;margin:0 auto;padding:0 24px}
+.px-sec{padding:88px 0}
+.px-alt{background:var(--bg)}
+.px-eyebrow{display:inline-block;font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);margin-bottom:14px}
+.px h2{font-size:clamp(28px,4vw,42px);font-weight:700;max-width:820px}
+.px-lead{color:var(--mut);font-size:19px;max-width:720px;margin-top:16px}
+.px-btn{display:inline-block;padding:16px 30px;border-radius:14px;font-weight:600;font-size:16px;transition:transform .15s,box-shadow .15s;cursor:pointer}
+.px-btn:hover{transform:translateY(-2px)}
+.px-b1{background:linear-gradient(135deg,#1f5db3,#2f86d6);color:#fff!important;box-shadow:0 10px 26px rgba(31,93,179,.32)}
+.px-b2{background:#fff;color:var(--blue)!important;border:1.5px solid var(--line)}
+.px-bar{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.px-logo{font-family:'Montserrat',Arial,sans-serif;font-weight:800;font-size:24px;letter-spacing:.02em;font-style:italic}
+.px-nav{display:flex;gap:28px;font-size:15px;color:var(--mut)}
+.px-nav a:hover{color:var(--blue)}
+
+/* HERO */
+.px-hero{background:radial-gradient(900px 500px at 85% 0%,#d9f3fb 0,transparent 60%),radial-gradient(700px 500px at 0% 100%,#e4efff 0,transparent 60%),#f7fbff;padding-bottom:84px}
+.px-hgrid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;padding-top:36px}
+.px-tag{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:99px;padding:8px 16px;font-size:14px;color:var(--mut);margin-bottom:22px}
+.px-tag b{color:var(--blue)}
+.px-hero h1{font-size:clamp(34px,5.2vw,58px);font-weight:800}
+.px-hero h1 span{background:linear-gradient(90deg,#1f5db3,#2bb3e0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.px-hero .px-lead{font-size:20px;margin-top:22px}
+.px-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.px-note{font-size:14px;color:var(--mut);margin-top:16px}
+.px-mock{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:0 30px 70px rgba(15,31,61,.14);padding:20px}
+.px-mdots{display:flex;gap:6px;margin-bottom:14px}
+.px-mdots i{width:10px;height:10px;border-radius:50%;background:#dbe6f4;display:block}
+.px-ask{background:var(--bg);border-radius:12px;padding:12px 14px;font-size:14px;color:var(--mut)}
+.px-ans{margin-top:12px;background:linear-gradient(135deg,#eaf6fd,#eef3ff);border-radius:12px;padding:14px;font-size:14px}
+.px-ans b{display:block;margin-bottom:6px;color:var(--blue)}
+.px-chip{display:inline-block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:4px 9px;font-size:12px;margin:8px 6px 0 0;color:var(--mut)}
+.px-row{display:flex;justify-content:space-between;margin-top:14px;font-size:13px;color:var(--mut);border-top:1px dashed var(--line);padding-top:12px}
+
+/* STATS */
+.px-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:-44px;position:relative}
+.px-stat{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 12px 30px rgba(15,31,61,.07)}
+.px-stat b{font-family:'Montserrat',Arial,sans-serif;font-size:32px;color:var(--blue);display:block}
+.px-stat span{font-size:14px;color:var(--mut)}
+
+/* GRIDS */
+.px-g{display:grid;gap:20px;margin-top:44px}
+.px-g2{grid-template-columns:repeat(2,1fr)}
+.px-g3{grid-template-columns:repeat(3,1fr)}
+.px-g4{grid-template-columns:repeat(4,1fr)}
+.px-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px}
+.px-card h3{font-size:19px;margin:14px 0 10px}
+.px-card p{color:var(--mut);font-size:16px}
+.px-ic{width:46px;height:46px;border-radius:13px;display:flex;align-items:center;justify-content:center;font-size:22px;background:linear-gradient(135deg,#dff3fb,#e6eeff)}
+.px-pain{border-left:4px solid #e8784d}
+.px-pain h3{margin-top:0}
+.px-num{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#1f5db3,#2bb3e0);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-family:'Montserrat',Arial,sans-serif}
+
+/* EXPERT */
+.px-exp{background:linear-gradient(135deg,#0f2a57,#1f5db3);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.px-exp h2{color:#fff}
+.px-exp .px-eyebrow{color:#9fdcf3}
+.px-exp p{color:#d3e2f7;margin-top:16px}
+.px-exp ul{margin:22px 0 0;padding:0;list-style:none}
+.px-exp li{padding:8px 0 8px 30px;position:relative;color:#eaf2fd}
+.px-exp li:before{content:"✓";position:absolute;left:0;color:#8fd97f;font-weight:700}
+.px-big{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:22px;padding:32px;text-align:center}
+.px-big b{font-family:'Montserrat',Arial,sans-serif;font-size:56px;line-height:1;display:block;background:linear-gradient(90deg,#8fd97f,#5cc8ee);-webkit-background-clip:text;background-clip:text;color:transparent}
+.px-big span{display:block;margin-top:12px;color:#d3e2f7;font-size:15px}
+
+/* PRICING */
+.px-pr{text-align:left;position:relative;display:flex;flex-direction:column}
+.px-pr ul{flex:1}
+.px-pr .px-price{font-family:'Montserrat',Arial,sans-serif;font-size:38px;font-weight:800;margin:10px 0 2px}
+.px-pr .px-price small{font-size:16px;font-weight:500;color:var(--mut)}
+.px-pr ul{list-style:none;padding:0;margin:18px 0 24px}
+.px-pr li{padding:6px 0 6px 26px;position:relative;font-size:15px;color:var(--mut)}
+.px-pr li:before{content:"✓";position:absolute;left:0;color:#2fa86a;font-weight:700}
+.px-hot{border:2px solid var(--blue);box-shadow:0 18px 44px rgba(31,93,179,.18)}
+.px-badge{position:absolute;top:-14px;left:28px;background:var(--blue);color:#fff;font-size:12px;font-weight:600;padding:5px 12px;border-radius:99px;letter-spacing:.04em}
+.px-pr .px-btn{width:100%;text-align:center}
+
+/* TRUST */
+.px-ok{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px solid var(--line)}
+.px-ok:last-child{border:0}
+.px-ok i{flex:none;width:26px;height:26px;border-radius:50%;background:#e3f6ea;color:#2fa86a;font-style:normal;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px}
+
+
+/* COMPARE */
+.px-cmp{width:100%;border-collapse:separate;border-spacing:0;margin-top:44px;background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;font-size:15px}
+.px-cmp th,.px-cmp td{padding:16px 18px;text-align:center;border-bottom:1px solid var(--line)}
+.px-cmp tr:last-child td{border-bottom:0}
+.px-cmp th:first-child,.px-cmp td:first-child{text-align:left;font-weight:600}
+.px-cmp thead th{background:var(--bg);font-size:14px;color:var(--mut);font-weight:600}
+.px-cmp .px-us{background:linear-gradient(180deg,#eaf4ff,#e3f1fb);color:var(--ink)}
+.px-cmp thead .px-us{background:linear-gradient(135deg,#1f5db3,#2f86d6);color:#fff;font-family:'Montserrat',Arial,sans-serif;font-size:16px}
+.px-y{color:#2fa86a;font-weight:700;font-size:18px}
+.px-n{color:#c4503a;font-weight:700;font-size:18px}
+.px-p{color:#b88a1e;font-weight:600;font-size:13px}
+.px-save{margin-top:28px;display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.px-sv{border-radius:20px;padding:30px}
+.px-sv1{background:#fff;border:1px solid var(--line)}
+.px-sv2{background:linear-gradient(135deg,#0f2a57,#1f5db3);color:#fff}
+.px-sv b{font-family:'Montserrat',Arial,sans-serif;font-size:44px;display:block;margin:8px 0}
+.px-sv1 b{color:#c4503a}
+.px-sv2 b{color:#8fd97f}
+.px-sv span{font-size:15px;opacity:.85}
+.px-adv{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:28px}
+.px-adv .px-card{border-top:4px solid var(--sky)}
+.px-cw{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.px-cw .px-cmp{min-width:680px}
+
+/* FAQ */
+.px details{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px;margin-top:14px}
+.px summary{cursor:pointer;font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+.px summary::-webkit-details-marker{display:none}
+.px summary:after{content:"+";color:var(--blue);font-size:24px;line-height:1}
+.px details[open] summary:after{content:"–"}
+.px details p{margin-top:12px;color:var(--mut)}
+
+/* FINAL */
+.px-fin{background:linear-gradient(135deg,#d9f3fb,#e4efff);border-radius:28px;padding:64px 32px;text-align:center}
+.px-fin h2{margin:0 auto}
+.px-fin .px-lead{margin:16px auto 0}
+.px-fin .px-cta{justify-content:center}
+.px-foot{padding:36px 0;color:var(--mut);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+
+@media(max-width:960px){
+.px-hgrid,.px-exp{grid-template-columns:1fr}
+.px-g3,.px-g4{grid-template-columns:repeat(2,1fr)}
+.px-adv{grid-template-columns:1fr}.px-save{grid-template-columns:1fr}
+.px-stats{grid-template-columns:repeat(2,1fr)}
+.px-nav{display:none}
+.px-exp{padding:36px 26px}
+}
+@media(max-width:640px){
+.px{font-size:16px}
+.px-sec{padding:60px 0}
+.px-g2,.px-g3,.px-g4{grid-template-columns:1fr}
+.px-btn{width:100%;text-align:center}
+.px-bar .px-btn{width:auto;flex:none;margin-left:12px}
+.px-big b{font-size:46px}
+}
+</style>
+
+<div class="px">
+
+<!-- ШАПКА + HERO -->
+<section class="px-hero">
+  <div class="px-w">
+    <div class="px-bar">
+      <div class="px-logo">PRAXIS</div>
+      <nav class="px-nav">
+        <a href="#px-solution">Решение</a>
+        <a href="#px-compare">Сравнение</a>
+        <a href="#px-product">Продукт</a>
+        <a href="#px-experts">Экспертам</a>
+        <a href="#px-price">Тарифы</a>
+        <a href="#px-faq">Вопросы</a>
+      </nav>
+      <a class="px-btn px-b2" style="padding:11px 20px;font-size:14px" href="#px-final">Ранний доступ</a>
+    </div>
+    <div class="px-hgrid">
+      <div>
+        <div class="px-tag"><b>Скоро запуск</b> · запишитесь в список раннего доступа</div>
+        <h1>Найдите решение для клиента <span>за секунды</span>, а не за вечер поисков</h1>
+        <p class="px-lead">AI-экосистема для психологов и помогающих профессий: проверенная база знаний от экспертов, умный поиск и удобная CRM с видеовстречами — в одном месте.</p>
+        <div class="px-cta">
+          <a class="px-btn px-b1" href="#px-final">Попробовать бесплатно</a>
+          <a class="px-btn px-b2" href="#px-solution">Как это работает</a>
+        </div>
+        <p class="px-note">Демо-доступ на 21 день: 500 токенов и все функции платформы.</p>
+      </div>
+      <div class="px-mock" aria-hidden="true">
+        <div class="px-mdots"><i></i><i></i><i></i></div>
+        <div class="px-ask">Клиентка, 34 года, панические атаки после переезда. Что работает в первые сессии?</div>
+        <div class="px-ans"><b>AI-подбор по базе знаний</b>
+          Нашёл 12 проверенных материалов: протокол работы с тревогой, 3 видеоразбора и чек-лист первой сессии.
+          <div><span class="px-chip">Видео · 18 мин</span><span class="px-chip">Протокол</span><span class="px-chip">Чек-лист</span></div>
+        </div>
+        <div class="px-row"><span>✔ Материалы проверены модератором</span><span>В избранное →</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="px-w">
+  <div class="px-stats">
+    <div class="px-stat"><b>1 млн+</b><span>материалов — целевой объём базы знаний</span></div>
+    <div class="px-stat"><b>100%</b><span>материалов проходят ручную модерацию</span></div>
+    <div class="px-stat"><b>50</b><span>экспертов на платформе сегодня</span></div>
+    <div class="px-stat"><b>500</b><span>токенов в бесплатном демо-доступе</span></div>
+  </div>
+</div>
+
+<!-- ПРОБЛЕМА -->
+<section class="px-sec">
+  <div class="px-w">
+    <span class="px-eyebrow">Знакомо?</span>
+    <h2>Работа специалиста помогающей профессии — это ещё и бесконечный поиск и рутина</h2>
+    <div class="px-g px-g2">
+      <div class="px-card px-pain"><h3>Не знаете, как помочь в сложном случае</h3><p>История клиента нетипична, а опыта именно в этой теме не хватает. Найти проверенный подход приходится самому.</p></div>
+      <div class="px-card px-pain"><h3>Информация есть, но найти её невозможно</h3><p>Статьи, курсы, записи, чаты — всё разбросано. Качество источников непонятно, на проверку уходят часы.</p></div>
+      <div class="px-card px-pain"><h3>Записи живут в десяти местах</h3><p>Блокноты, мессенджеры, таблицы, отдельные видеосервисы. Нет единой картины по клиенту и его прогрессу.</p></div>
+      <div class="px-card px-pain"><h3>Знания эксперта не приносят дохода</h3><p>В России нет единой платформы, где авторские материалы монетизируются регулярно, а не разовой продажей курса.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- РЕШЕНИЕ -->
+<section class="px-sec px-alt" id="px-solution">
+  <div class="px-w">
+    <span class="px-eyebrow">Решение</span>
+    <h2>Praxis объединяет знания, AI и рабочий кабинет специалиста</h2>
+    <p class="px-lead">Одна платформа вместо россыпи инструментов: находите решение, применяете его и фиксируете результат — не переключаясь между сервисами.</p>
+    <div class="px-g px-g3">
+      <div class="px-card"><div class="px-ic">📚</div><h3>База знаний с модерацией</h3><p>Материалы загружают эксперты, каждый проходит ручную проверку по стандартам качества: видео, аудио, тексты, изображения.</p></div>
+      <div class="px-card"><div class="px-ic">✨</div><h3>AI-поиск решений</h3><p>Опишите ситуацию — AI находит подходящие материалы за секунды и подсказывает, с чего начать работу с клиентом.</p></div>
+      <div class="px-card"><div class="px-ic">🗂️</div><h3>CRM для психолога</h3><p>Карточки клиентов, сессии, видеовстречи, аудиозаметки и избранное — всё в одном месте и рядом с материалами.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- СРАВНЕНИЕ -->
+<section class="px-sec" id="px-compare">
+  <div class="px-w">
+    <span class="px-eyebrow">Почему Praxis</span>
+    <h2>Зачем платить за четыре сервиса, если всё нужное — в одном</h2>
+    <p class="px-lead">Обычно специалисту приходится сочетать агрегатор клиентов, CRM, отдельные базы знаний и общие AI-чаты. Praxis собирает это в одну подписку без комиссии с ваших сессий.</p>
+    <div class="px-cw">
+    <table class="px-cmp">
+      <thead><tr><th>Что важно в работе</th><th class="px-us">Praxis</th><th>Агрегаторы консультаций</th><th>Простые CRM для психологов</th><th>Общие AI-чаты</th></tr></thead>
+      <tbody>
+        <tr><td>База знаний с ручной модерацией</td><td class="px-us"><span class="px-y">✓</span></td><td><span class="px-n">✕</span></td><td><span class="px-n">✕</span></td><td><span class="px-p">без проверки источников</span></td></tr>
+        <tr><td>AI-поиск решений под клиентский случай</td><td class="px-us"><span class="px-y">✓</span></td><td><span class="px-n">✕</span></td><td><span class="px-n">✕</span></td><td><span class="px-p">общий, без профессиональной базы</span></td></tr>
+        <tr><td>CRM, видеовстречи и заметки в одном кабинете</td><td class="px-us"><span class="px-y">✓</span></td><td><span class="px-p">частично</span></td><td><span class="px-y">✓</span></td><td><span class="px-n">✕</span></td></tr>
+        <tr><td>Заработок экспертов на своих материалах</td><td class="px-us"><span class="px-y">✓</span></td><td><span class="px-n">✕</span></td><td><span class="px-n">✕</span></td><td><span class="px-n">✕</span></td></tr>
+        <tr><td>Комиссия с ваших сессий</td><td class="px-us"><b>0%</b>, только подписка</td><td><span class="px-n">30–35%</span></td><td>нет</td><td>нет</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <div class="px-save">
+      <div class="px-sv px-sv1"><span>Пример: 20 сессий по 5 000 ₽ в месяц = 100 000 ₽. Агрегатор с комиссией 30–35% забирает</span><b>30–35 тыс. ₽</b><span>каждый месяц</span></div>
+      <div class="px-sv px-sv2"><span>Тот же объём работы на Praxis: подписка от 3 000 ₽ в месяц, и весь доход остаётся у вас</span><b>от 3 000 ₽</b><span>в месяц, без комиссии с сессий</span></div>
+    </div>
+    <div class="px-adv">
+      <div class="px-card"><h3 style="margin-top:0">Меньше времени на поиск</h3><p>Не нужно искать и проверять источники вручную: AI подбирает материалы под ваш случай из проверенной базы.</p></div>
+      <div class="px-card"><h3 style="margin-top:0">Одна подписка вместо набора сервисов</h3><p>Знания, AI, CRM, видеовстречи и заметки не нужно оплачивать и настраивать по отдельности.</p></div>
+      <div class="px-card"><h3 style="margin-top:0">Доход остаётся у вас</h3><p>Praxis не берёт процент с ваших консультаций. Вы платите за инструмент, а не за каждого клиента.</p></div>
+    </div>
+    <p class="px-note" style="margin-top:18px">Сравнение по типам сервисов на российском рынке на основе открытых данных. Условия конкретных сервисов могут отличаться. Расчёт иллюстративный.</p>
+  </div>
+</section>
+
+<!-- ПРОДУКТ -->
+<section class="px-sec px-alt" id="px-product">
+  <div class="px-w">
+    <span class="px-eyebrow">Что внутри</span>
+    <h2>Всё, что нужно для практики — в первой версии платформы</h2>
+    <div class="px-g px-g4">
+      <div class="px-card"><div class="px-num">1</div><h3>Поиск по базе</h3><p>Быстрый доступ к релевантным материалам под конкретный клиентский случай.</p></div>
+      <div class="px-card"><div class="px-num">2</div><h3>Карточки клиентов</h3><p>История работы, заметки и прогресс клиента в одном профиле.</p></div>
+      <div class="px-card"><div class="px-num">3</div><h3>Видеовстречи</h3><p>Проводите сессии прямо на платформе и сразу фиксируйте итоги.</p></div>
+      <div class="px-card"><div class="px-num">4</div><h3>Аудиозаметки</h3><p>Наговорите заметку после сессии — не тратьте вечер на конспекты.</p></div>
+      <div class="px-card"><div class="px-num">5</div><h3>Избранное</h3><p>Сохраняйте нужные материалы в простые папки и возвращайтесь к ним в один клик.</p></div>
+      <div class="px-card"><div class="px-num">6</div><h3>Режим сессии</h3><p>Материалы и заметки под рукой во время приёма, без лишних переключений.</p></div>
+      <div class="px-card"><div class="px-num">7</div><h3>Личный кабинет</h3><p>Профиль специалиста, подписка и история использования платформы.</p></div>
+      <div class="px-card"><div class="px-num">8</div><h3>Человек + AI</h3><p>AI помогает искать и систематизировать, решения остаются за специалистом.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ЭКСПЕРТАМ -->
+<section class="px-sec" id="px-experts" style="padding-top:0">
+  <div class="px-w">
+    <div class="px-exp">
+      <div>
+        <span class="px-eyebrow">Для экспертов</span>
+        <h2>Превратите свои знания в постоянный доход</h2>
+        <p>Загружайте материалы в личном кабинете и получайте вознаграждение каждый раз, когда коллеги используют их в работе. Условия вознаграждения объясним при подключении.</p>
+        <ul>
+          <li>Вознаграждение за каждое использование ваших материалов коллегами</li>
+          <li>Чем больше качественного контента — тем выше регулярный доход</li>
+          <li>Любые форматы: видео, аудио, тексты, изображения</li>
+          <li>После модерации материал попадает в поиск и AI-ответы</li>
+        </ul>
+        <div class="px-cta"><a class="px-btn px-b1" style="background:#fff;color:#1f5db3!important;box-shadow:none" href="https://t.me/pgl13" target="_blank" rel="noopener">Стать экспертом</a></div>
+      </div>
+      <div class="px-big"><b>Доход</b><span>с каждого использования ваших знаний коллегами по платформе</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ТАРИФЫ -->
+<section class="px-sec" id="px-price">
+  <div class="px-w">
+    <span class="px-eyebrow">Тарифы</span>
+    <h2>Прозрачная подписка — выберите свой объём работы</h2>
+    <p class="px-lead">Начните с бесплатного демо-доступа и переходите на подписку, когда будете готовы работать на платформе постоянно.</p>
+    <div class="px-g px-g3">
+      <div class="px-card px-pr"><span class="px-badge" style="background:#2fa86a">ПОПРОБОВАТЬ БЕСПЛАТНО</span><h3 style="margin-top:0">Демо-доступ</h3>
+        <div class="px-price">0 ₽<small> / 21 день</small></div>
+        <ul><li>500 токенов</li><li>30 AI-запросов</li><li>10 скачиваний материалов</li><li>Все функции платформы</li></ul>
+        <a class="px-btn px-b2" href="#px-final">Попробовать бесплатно</a></div>
+      <div class="px-card px-pr"><h3 style="margin-top:0">Базовый</h3>
+        <div class="px-price">3 000 ₽<small> / мес</small></div>
+        <ul><li>3 000 токенов в месяц</li><li>100 AI-запросов в месяц</li><li>30 скачиваний материалов в месяц</li><li>CRM, видеовстречи, аудиозаметки</li></ul>
+        <a class="px-btn px-b2" href="#px-final">Выбрать тариф</a></div>
+      <div class="px-card px-pr px-hot"><span class="px-badge">ВЫБОР ПРАКТИКОВ</span><h3 style="margin-top:0">Профессиональный</h3>
+        <div class="px-price">5 000 ₽<small> / мес</small></div>
+        <ul><li>5 000 токенов + 1 000 бонусных</li><li>300 AI-запросов в месяц</li><li>60 скачиваний материалов в месяц</li><li>CRM, видеовстречи, аудиозаметки</li></ul>
+        <a class="px-btn px-b1" href="#px-final">Выбрать тариф</a></div>
+    </div>
+    <p class="px-note" style="margin-top:20px">Бесплатно предоставляется только демо-доступ на 21 день. Неиспользованные токены тарифа сгорают в конце периода. Дополнительные токены: 1&nbsp;000&nbsp;₽ = 1&nbsp;000&nbsp;токенов, действуют 6 месяцев.</p>
+  </div>
+</section>
+
+<!-- ДОВЕРИЕ -->
+<section class="px-sec px-alt">
+  <div class="px-w">
+    <div class="px-g px-g2" style="margin-top:0;align-items:center;gap:56px">
+      <div>
+        <span class="px-eyebrow">Почему Praxis можно доверять</span>
+        <h2>Качество материалов — главный принцип платформы</h2>
+        <p class="px-lead">Высокие барьеры для контента плюс ручная модерация дают то, чего не хватает открытому интернету: уверенность в источнике.</p>
+      </div>
+      <div>
+        <div class="px-ok"><i>✓</i><div><b>Каждый материал проверяется вручную.</b> Модераторы — психологи с более чем 20-летним стажем психологической практики. Контент стандартизирован по форматам и требованиям.</div></div>
+        <div class="px-ok"><i>✓</i><div><b>Над проектом работают практики.</b> Команда соединяет опыт психологов, разработки и продуктового управления.</div></div>
+        <div class="px-ok"><i>✓</i><div><b>Прототип готов.</b> Определён объём первой версии, подготовлены ТЗ и план запуска.</div></div>
+        <div class="px-ok"><i>✓</i><div><b>50 экспертов на платформе сегодня.</b> База знаний растёт за счёт практикующих специалистов.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="px-sec" id="px-faq">
+  <div class="px-w" style="max-width:860px">
+    <span class="px-eyebrow">Вопросы и ответы</span>
+    <h2>Частые вопросы</h2>
+    <details><summary>Для кого платформа?</summary><p>Для психологов, специалистов в сфере здравоохранения и помогающих профессий — тех, кто работает с клиентами и хочет быстрее находить решения и вести практику в одном месте.</p></details>
+    <details><summary>Можно ли попробовать бесплатно?</summary><p>Да. Демо-доступ бесплатный на 21 день: 500 токенов, 30 AI-запросов, 10 скачиваний и все функции платформы. Тарифы «Базовый» (3 000 ₽ в месяц) и «Профессиональный» (5 000 ₽ в месяц) оформляются по подписке без бесплатного периода.</p></details>
+    <details><summary>Кто создаёт материалы и кто их проверяет?</summary><p>Материалы загружают эксперты по установленным стандартам. Каждый из них вручную проверяют модераторы — психологи с более чем 20-летним стажем практики, и только после этого материал попадает в поиск и AI-ответы.</p></details>
+    <details><summary>Что такое токены и на что они тратятся?</summary><p>Токены — внутренняя единица платформы. Просмотр видео стоит 100 токенов, скачивание текста или изображения — 50. Оплаченное видео остаётся доступным, пока активна подписка, а скачанные материалы остаются у вас. Видео скачать нельзя, только смотреть на платформе. Неиспользованные токены тарифа сгорают в конце периода. Дополнительные токены (1&nbsp;000&nbsp;₽ = 1&nbsp;000&nbsp;токенов) действуют 6 месяцев.</p></details>
+    <details><summary>Заменяет ли AI специалиста?</summary><p>Нет. AI ускоряет поиск и систематизацию, а профессиональные решения остаются за вами.</p></details>
+    <details><summary>Как зарабатывают эксперты?</summary><p>Эксперт получает вознаграждение за использование своих материалов пользователями платформы. Чем больше качественного контента, тем выше регулярный доход. Условия уточняются при подключении.</p></details>
+    <details><summary>Когда запуск?</summary><p>Первая версия платформы готовится к запуску. Оставьте контакт, и мы напишем вам, когда откроем ранний доступ.</p></details>
+  </div>
+</section>
+
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section class="px-sec" id="px-final">
+  <div class="px-w">
+    <div class="px-fin">
+      <span class="px-eyebrow">Ранний доступ</span>
+      <h2>Присоединяйтесь к экосистеме, которая меняет правила игры</h2>
+      <p class="px-lead">Напишите нам — добавим вас в список раннего доступа и сообщим о запуске. Начните с бесплатного демо-доступа.</p>
+      <div class="px-cta">
+        <a class="px-btn px-b1" href="https://t.me/pgl13" target="_blank" rel="noopener">Написать в Telegram</a>
+        <a class="px-btn px-b2" href="mailto:praxi-s@inbox.ru?subject=Praxis%3A%20ранний%20доступ">praxi-s@inbox.ru</a>
+      </div>
+    </div>
+    <div class="px-foot"><span><b>PRAXIS</b> · AI-экосистема для специалистов помогающих профессий</span><span>Щербаков Алексей · +7 916 181-41-82</span></div>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
