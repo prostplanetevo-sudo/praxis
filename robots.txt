@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prostplanetevo-sudo.github.io/praxis/sitemap.xml
